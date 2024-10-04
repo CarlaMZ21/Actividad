@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="btn" onclick="numero(7)">7</button>
+            <button class="btn" onclick="numero(8)">8</button>
+            <button class="btn" onclick="numero(9)">9</button>
+            <button class="btn" onclick="numero('/'),chooseOperation('/')">/</button>
+            <button class="btn" onclick="numero(4)">4</button>
+            <button class="btn" onclick="numero(5)">5</button>
+            <button class="btn" onclick="numero(6)">6</button>
+            <button class="btn" onclick="numero('*'),chooseOperation('*')">*</button>
+            <button class="btn" onclick="numero(1)">1</button>
+            <button class="btn" onclick="numero(2)">2</button>
+            <button class="btn" onclick="numero(3)">3</button>
+            <button class="btn" onclick="numero('-'),chooseOperation('-')">-</button>
+            <button class="btn" onclick="numero(0)">0</button>
+            <button class="btn" onclick="numero('.')">.</button>
+            <button class="btn" onclick="compute()">=</button>
+            <button class="btn" onclick="numero('+'),chooseOperation('+')">+</button>
+            <button class="btn span-two" onclick="clearDisplay()">AC</button>
+        </div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
